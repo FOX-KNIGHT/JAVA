@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;AAD2_EXP_3&apos; to &apos;AAD2_EXP_4&apos;&#x0D;&#x0A;- Original project: &apos;AAD_2&apos;&#x0D;&#x0A;- Original element: &apos;AAD_2/src/AAD2_EXP_3&apos;&#x0D;&#x0A;- Renamed element: &apos;AAD_2/src/AAD2_EXP_4&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;AAD2_EXP_3&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;AAD2_EXP_3" name="AAD2_EXP_4" qualified="false" references="true" stamp="1773285563854" textual="false" version="1.0"/>
+</session>

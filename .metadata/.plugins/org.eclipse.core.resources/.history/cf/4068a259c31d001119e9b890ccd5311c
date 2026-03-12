@@ -1,0 +1,32 @@
+package AAD2_EXP_3;
+
+public class Q1 {
+
+	public static void main(String[] args) {
+		int[] num = {23, 4, 57, 82, 95, 13, 113, 224, 72, 18};
+        int size = 10;
+        int[] hashTable = new int[size];
+        int collisions = 0;
+
+        for (int i = 0; i < size; i++)
+            hashTable[i] = 0;
+
+        for (int key : num) {
+            int index = key % size;
+
+            if (hashTable[index] != 0) {
+                collisions++;
+            } else {
+                hashTable[index] = key;
+            }
+        }
+
+        System.out.println("Hash Table:");
+        for (int i = 0; i < size; i++)
+            System.out.println(i + " -> " + hashTable[i]);
+        System.out.println("");
+        System.out.println("Total Collisions: " + collisions);
+    
+	}
+
+}

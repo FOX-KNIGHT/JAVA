@@ -1,0 +1,30 @@
+package AAD2_EXP_3;
+
+public class Q3 {
+
+	public static void main(String[] args) {
+		int[] keys = {23,4,57,82,95,13,113,224,72,18};
+        int size = 10;
+        int[] table = new int[size];
+        
+        for(int i=0;i<size;i++)
+            table[i] = 0;
+
+        for(int key : keys){
+            int index = key % size;
+            int i = 1;
+            while(table[index] != 0){
+                index=(key % size + i*i) % size;
+                i++;
+            }
+            table[index] = key;
+        }
+
+        System.out.println("Hash Table using Quadratic Probing:");
+
+        for(int j=0;j<size;j++)
+            System.out.println(j+" -> "+table[j]);
+
+	}
+
+}
